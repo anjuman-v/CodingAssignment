@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>hof</title>
+</head>
+<body>
+       <h1>First H1</h1>
+        <h1>Second H1</h1>
+        <h3>First H3</h3>
+        <h3>Second H3</h3>
+        <h5>First H5</h5>
+        <h5>Second H5</h5>
+        <h5>Third H5</h5>
+        <div class="green">First DIV</div>
+        <div class="red">Second DIV</div>
+        <div class="blue">Third DIV</div>
+        <p class="green">First P</p>
+        <p class="red">Second P</p>
+        <p class="blue">Third P</p>
+        <hr/>
+        <button onclick="Change1()">Change H1</button>
+        <button onclick="Change3()">Change H3</button>
+        <button onclick="Change5()">Change H5</button>
+        <button>Change Green</button>
+        <button>Change Red</button>
+        <button>Change Blue</button>
+        
+    </body>
+</html>
+
+
+<script>
+	function Change1(){
+		var divs = document.querySelectorAll('h1');
+		for(i=0;i<divs.length;i++){
+          var h1 = divs[i];
+          h1.style.color = 'red';
+          h1.innerHTML = 'DIV' +(i+1);
+		}
+    }
+    function Change3(){
+	 var paras = document.querySelectorAll('h3');
+	 for(i=0;i<paras.length;i++){
+	  var secondPara = paras[i];
+	  
+	  secondPara.style.color = 'green';
+}
+}
+
+function Change5() {
+ var divs = document.querySelectorAll('h5');
+		for(i=0;i<divs.length;i++){
+          var h1 = divs[i];
+          h1.style.color = 'blue';
+          h1.innerHTML = 'DIV' +(i+1);
+}
+
+
+}
+</script>

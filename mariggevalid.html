@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bhaluiya ki sadi</title>
+</head>
+<body>
+<p></p>
+<input type="number" placeholder="enter age" />
+<button onclick="checkAge()">Submit</button>
+</body>
+</html>
+
+<script>
+    function checkAge(){
+
+        var age =document.querySelector("input").value;
+        var ptag=document.querySelector("p");
+        console.log(age);
+        if(age == 18){
+            ptag.textContent="kr le Sadi";
+        }
+         else if(age<18){
+            ptag.textContent="bhut chull h sadi ki";
+        } 
+        else {
+            ptag.textContent="kb kregi sadi umer ho gyi h teri";
+        }
+        document.querySelector("input").value="";
+    }
+</script>

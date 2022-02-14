@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>boxes.html</title>
+    <style>
+        .container{
+            height: 400px;
+            width: 900px;
+            background-color: honeydew;
+            display: grid;
+            grid-template-columns: repeat(5, 150px) ;
+            grid-template-rows: repeat(2, 150px);
+            /*grid-row-gap: 20px;
+            grid-column-gap: 20px;*/
+            grid-gap: 30px 20px;
+            padding: 100px 0 0 100px;
+
+        }
+        .container > div{
+            background-color: teal;
+
+        }
+         @media only screen and (min-width: 0px) and (mix-width: 320){
+            #container{
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: repeat(1, 1fr);
+            }
+         }
+         @media only screen and (min-width: 320px) and (max-width: 700){
+            #container{
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows:repeat(5, 200px);
+            }
+         }
+
+        /*html,*/
+        /*body{
+            
+            background-color: honeydew;
+            margin: 10px;
+        }
+        .a{
+            background-color: teal;
+       }
+       .b{
+            background-color: teal;
+       }
+       .c{
+            background-color: teal;
+       }
+       .d{
+            background-color: teal;
+       }
+       .e{
+            background-color: teal;
+       }
+       .f{
+            background-color: teal;
+       }
+       .g{
+            background-color: teal;
+       }
+       .h{
+            background-color: teal;
+       }
+       .i{
+            background-color: teal;
+       }
+       .j{
+            background-color: teal;
+       }*/
+       
+       
+    </style>
+</head>
+<body>
+    <center>
+    <div class="container">
+    <div class="a"></div>
+    <div class="b"></div>
+    <div class="c"></div>
+    <div class="d"></div>
+    <div class="e"></div>
+    <div class="f"></div>
+    <div class="g"></div>
+    <div class="h"></div>
+    <div class="i"></div>
+    <div class="j"></div>
+    </div>
+  </center>
+</body>
+</html>

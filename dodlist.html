@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>todolist</title>
+    <style>
+        table{
+            margin-top: 20px;
+        }
+    </style>
+
+</head>
+<body>
+
+<h1>Todo List</h1>
+   <form id="myform">
+       <label>Name</label>
+        <input  type="text" id="name" placeholder="name"/>
+        <label>Quantity</label>
+        <input id="qty" type="number" placeholder="no.of"/>
+        <label>priority</label>
+        <select id="sele">
+            <option value="high">High</option>
+            <option value="medium">Medium</option>
+            <option value="low">Low</option>
+            
+        </select>
+        <input type="submit" placeholder="submit"/>
+    </form>
+    <table border="1px">
+        <thead>
+            <tr>
+                <td>Name</td>
+                <td>Quantity</td>
+                <td>Priority</td>
+                <td>Delete</td>
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+    </table>
+</body>
+</html>
